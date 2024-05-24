@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{ 
+			background-image:url("naruto.jpg");
+			background-size:cover;
+			width:100% 100%;
+		}
+		.bem-vindo{
+			 border-style:solid;
+			 border-color:black;
+			 box-shadow: 0.1vw black;
+			 border-width:0.3vw;
+			 border-radius:2vw;
+			 color:black;
+			 background-color:#303030 ;    
+			 text-align:center;
+			 width:80vw;
+			 margin:auto 10vw auto;
+			 
+		}
+		.bem-vindo:hover{
+			transtion:1s;
+			border-style:solid;
+			font-color:transparent;
+			background-color:transparent;
+			Opacity:0.1;
+			
+		}
+		.borda-formulario{
+			border-style:solid;
+			border-color:black;
+			box-shadow:0.9vw;
+			border-width:0.5vw;
+			border-radius:3vw;
+			background-color:#303030 ;    
+			text-align:center;
+			width:30vw;
+			margin:2vw 15vw 2vw;
+			
+		}
+		h1{
+			text-align:center;
+			font-align:center;
+			color : white;
+			font-family: arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:3vw;
+			text-align:center;
+		}
+		h2{
+			text-align:center;
+			font-align:center;
+			color : #451a4d;
+			font-family: arial;
+			font-weight:bold;
+			font-style:italic;
+			font-size:3vw;
+			text-align:center;
+			
+			}
+		h4{
+			color:white;
+			font-family: arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-align:center;
+			-webkit-text-stroke:0.1vw black;
+			
+		}
+		h3{
+			font-size:1.6vw;
+			text-align:center;
+			color:white;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			-webkit-text-stroke:0.1vw black;
+		
+		}
+		.titulo{
+			font-size:2vw;
+			text-align:center;
+			color:#451a4d;
+			font-family:arial;
+			
+			-webkit-text-stroke: 0.1vw white;
+			 
+		}
+		p{
+			font-size:2vw;
+			text-align:center;
+			color:white;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			-webkit-text-stroke:0.1vw purple;
+			
+			
+			
+			
+		}
+		.botao{
+			border-style:solid;
+			 border-color:white;
+			 box-shadow: 1vw black;
+			 border-width:0.3vw;
+			 border-radius:2vw;
+			 color:orange;
+			 background-color:white;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-decoration:none;
+			font-weight: bold;
+			-webkit-text-stroke:0.1vw black;
+			
+		}
+			.sobrenos{
+				color:black;
+				font-family: arial;
+				font-style:italic;
+				font-weight:bold;
+				font-size:1.5vw;
+				text-align:center;
+				-webkit-text-stroke:0.01vw black;
+				text-decoration:none;
+				
+			}
+	</style>
+					<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+					<script>
+						function botao(){
+						
+							swal({
+							title: "Modo sabio ativado",
+							text: "Acesso liberado",
+							icon: "success",
+							button: "Entrar",
+							});
+
+							}
+					</script>
+					
+		<h2 class="titulo">Seja bem-vindo otaku</h2>
+
+	<div class="bem-vindo">
+	  <h3>Qual seu jeito ninja ?</h3>
+	  
+
+	</div>
+	
+	
+
+
+</head>
+<body>
+	<div class="borda-formulario" name="formulario">
+	
+		<form action="" id="formulario">
+				<legend>
+					<h4></h4>
+				</legend>
+				<h4>
+					<label for="nome" id="login">Login:</label>
+				</h4>
+				<h4>
+					<input type="text" id="nome" name="fname" class="botao">
+				</h4>
+				<h4>
+					<label for="senha" >Senha:</label>
+				</h4>
+				<h4>
+					<input type="password" id="senha" name="senha" class="botao">
+				</h4>
+				</form>
+				<h3>
+					<button onclick="botao()" id ="botao" value="Login" class="botao"> Login</button>
+				
+				<a href="paginainicial.html" name="botao" button class="botao" value="voltar"> Voltar 
+					</a>  
+					</button>
+				</h3>
+				<h3><a href="esqueceusenha.html" name="esqueceu" button class="botao" value="esqueceu"> Esqueceu a senha?
+					</a>  
+					</button>
+				</h3>
+			
+				<h3><a href="cadastro.html" name="botao" button class="botao" value="cadastro"> Crie seu cadastro
+					</a>  
+					</button>
+				</h3>
+				
+		
+
+	</div>
+</body>
+<footer> 
+	
+		<h4>
+			<a href="sobrenos.html" name="sobrenos" id="sobrenos" class="sobrenos">
+			Conheca mais sobre os criadores deste conteudo
+			
+		</a>
+		</h4>
+	
+</footer>
+</html>
