@@ -1,0 +1,5 @@
+pagina que faltam.
+gestao de dados do usuario, ok 
+carinho ( produtos comprados), < array
+pagina interna (adm) com uma lista de vendas realizadas. < array - 
+aba que a pessoa ta logada - 

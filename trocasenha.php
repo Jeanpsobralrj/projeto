@@ -3,7 +3,12 @@
 <?php
 include('sessao.php');
 include('conexao.php');
+$email = filter_input(INPUT_GET, 'email',  FILTER_SANITIZE_EMAIL);
+$resultado_usuario = "SELECT * FROM cliente WHERE email = '$email'";
+$resultado_usuario = mysqli_query($mysqli, $resultado_usuario);
+$row_usuario = mysqli_fetch_assoc($resultado_usuario);
 ?>
+
 <head>
 	<style>
 		body{ 
@@ -157,29 +162,35 @@ include('conexao.php');
 </head>
 <body>
 	<div class="borda-formulario">
-	
-		<form action="/action_page.php">
+			
+			<?php
+		if(isset($_SESSION['msg'])){
+			echo $_SESSION['msg'];
+			unset($_SESSION['msg']);
+		}
+		?>
+			<form action="atualizar.php" method="post">
 				
 				<h4>
-					<label for="senha">Senha:</label>
+					<label for="senha">Atualize sua senha:</label>
 				</h4>
 				<h4>
-					<input type="password" id="senha" name="senha" class="botao">
+					<input type="password" id="senha" name="senha" class="botao" value="">
 				</h4>
 				<h4>
-					<label for="senha">Confirme a nova senha:</label>
+					<label for="senha">Confirme seu e-mail</label>
 				</h4>
 				<h4>
-					<input type="password" id="senha" name="senha" class="botao">
+					<input type="text" id="senha" name="email" class="botao" value="">
 				</h4>
-			</form>
-				<h3>
-					<button onclick=botao() id ="botao" value="Enviar" class="botao"> Concluir </button>
-				</h3>
 			
+				<h3>
+					<button type="submit" onclick=botao() id ="botao" value="Enviar" class="botao"> Concluir </button>
+				</h3>
+				</form>
 				</h4>
 	
-				<h3><a href="Login.html" name="botao" button class="botao" value="cadastro"> Voltar
+				<h3><a href="conta.php" name="botao" button class="botao" value="cadastro"> Voltar
 					</a>  
 					</button>
 				</h3>

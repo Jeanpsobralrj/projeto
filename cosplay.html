@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{ 
+			background-image:url("fundosite.png");
+			background-size:cover;
+			width:100% 100%;
+		}
+		.bem-vindo{
+			 border-style:solid;
+			 border-color:black;
+			 box-shadow: 2vw black;
+			 border-width:100%;
+			 border-radius:0.5vw;
+			 color:black;
+			 background-color:#303030 ;    
+			 text-align:center;
+			 width:100% 100%;
+			 margin:auto auto auto auto;
+			 word-break:normal;
+			 
+		}
+		.foto{
+
+			max-width: 100%;
+			width:4vw;
+			heigth:4vw;
+			margin:0.1vw 70vw -4.7vw 1vw ;
+		}
+
+		.borda-formulario{
+			border-style:solid;
+			border-color: #303030 ;
+			box-shadow:0vw;
+			border-width:0.5vw;
+			border-radius:1vw;
+			background-color:#303030 ;    
+			text-align:center;
+			width:50vw;
+			margin:2vw 23vw 2vw;
+			
+		}
+		h1{
+			text-align:center;
+			font-align:center;
+			color : white;
+			font-family: arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:3vw;
+			text-align:center;
+		}
+		h2{
+			text-align:center;
+			font-align:center;
+			color : #451a4d;
+			font-family: arial;
+			font-weight:bold;
+			font-style:italic;
+			font-size:3vw;
+			text-align:center;
+			
+			}
+		h4{
+			color:white;
+			font-family: arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-align:center;
+			-webkit-text-stroke:0.1vw black;
+			
+		}
+		h3{
+			font-size:1.6vw;
+			text-align:center;
+			color:white;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			-webkit-text-stroke:0.1vw black;
+		
+		}
+		.titulo{
+			font-size:2vw;
+			text-align:center;
+			color:#451a4d;
+			font-family:arial;
+			
+			-webkit-text-stroke: 0.1vw white;
+			 
+		}
+		p{
+			font-size:2vw;
+			text-align:center;
+			color:white;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			-webkit-text-stroke:0.1vw purple;
+			
+			
+			
+			
+		}
+		.botao{
+			border-style:solid;
+			 border-color:#303030;
+			 box-shadow: 0.5vw #303030;
+			 border-width:0.3vw;
+			 border-radius:3vw;
+			 color:white;
+			 background-color:#303030;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-decoration:none;
+			font-weight: bold;
+			-webkit-text-stroke:0.1vw black;
+			
+		}
+		.botaopesquisa{
+			
+			border-style:solid;
+			 border-color:#303030;
+			 box-shadow: 0.5vw #303030;
+			 border-width:0.3vw;
+			 border-radius:3vw;
+			 color:white;
+			 background-color:#303030;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-decoration:none;
+			font-weight: bold;
+			-webkit-text-stroke:0.1vw black;
+		
+		}
+
+		.pesquisa{
+			height: 1.8vw;
+			width: 40vw;
+			margin:-10vw 2vw -1vw 1vw;
+			border-style:solid;
+			 border-color:white;
+			 box-shadow: 9vw #303030 ;
+			 border-width:0.3vw;
+			 border-radius:3vw;
+			 color:orange;
+			 background-color:white;
+			font-color:#303030;
+			font-family:arial;
+			font-style:italic;
+			font-weight:bold;
+			font-size:1.5vw;
+			text-decoration:none;
+			font-weight: bold;
+			-webkit-text-stroke:0.1vw #303030;
+}
+			.sobrenos{
+				color:black;
+				font-family: arial;
+				font-style:italic;
+				font-weight:bold;
+				font-size:1.5vw;
+				text-align:center;
+				-webkit-text-stroke:0.01vw black;
+				text-decoration:none;
+				
+			}
+			.narutofoto{
+				width:20vw;
+				height:auto; 
+				margin-right:30vw;
+			}
+	</style>
+		
+
+	<div class="bem-vindo">
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+					<script>
+						function botao(){
+						
+							swal({
+							title: "Acabou o crakra",
+							text: "Pesquisa liberada apenas para usuarios logados",
+							icon: "success",
+							button: "Acessar login",
+							}).then((value) => {
+         							   window.location = "login.php"
+     									   })
+
+							}
+					</script>
+		<h3>	<img src="narutohogake.png" class="foto">
+			<input type="text" placeholder="pesquisa" id="pesquisa" class="pesquisa" name="pesquisa"> 
+			</input>
+		<button onclick="botao()" type ="submit" id ="pesquisa" class="botaopesquisa" name="botaopesquisa">
+			Buscar
+		</button>
+		
+		</h3>
+	 	<h3>  
+			<a href="roupas.html" class="botaopesquisa">Roupas</a> //
+			<a href="cosplay.html" class="botaopesquisa">Cosplay</a> //
+			<a href="bonecos.html" class="botaopesquisa">Bonecos</a> //
+			<a href="mangas.html" class="botaopesquisa">Mangas</a>//
+			<a href="acessorios.html" class="botaopesquisa">Acessorios</a>//
+			<a href="login.html" class="botaopesquisa">Login</a>
+		</h3>
+		
+ 
+	</div>
+	
+	
+   </head>
+    <body>
+	<div class="borda-formulario">
+
+
+
+
+
+
+		    <H3> COSPLAY </H3>
+			<img  src="narutored.jpeg" height="300" width="300" class="naruto"  style="background: transparent;">
+			<H3> ROUPA NARUTO </H3>
+			<h3> DE R$:200,00 PARA R$:150,00 </H3>
+			
+
+			<img src="sakura.png" height="300" width="300" class="sasuke" style="background: transparent;">
+			<H3> ROUPA SAKURA </H3>
+			<h3> de R$:99,90 para R$:69,99 </H3>	
+		    <div>
+
+		    <H3>               </H3>
+			<IMG SRC="tobicold.PNG" .alt="imagem" height="300" width="300" class="tobicoldfoto">
+			<H3> ROUPA TOBICOLD </H3>
+			<h3> DE R$:109,99 PARA R$:69,99 </H3>
+
+            
+
+            <IMG SRC="gaara.jpg" .alt="imagem" height="300" width="300" class="gaaradfoto">
+			<H3> ROUPA GAARA </H3>
+			<h3> DE R$:109,99 PARA R$:89,99 </H3>
+
+
+            <IMG SRC="sasuke.jpg" .alt="imagem" height="300" width="300" class="sasukeuchiladfoto">
+			<H3> ROUPA SASUKE UCHILA </H3>
+			<h3> DE R$:150,00 PARA R$:99,99 </H3>
+
+
+
+            <IMG SRC="kakashi.jpg" .alt="imagem" height="300" width="300" class="kakashifoto">
+			<H3> ROUPA KAKASHI</H3>
+			<h3> DE R$:150,00 PARA R$:70,00 </H3>
+
+
+        
+            <IMG SRC="AKATSUKI.jpg" .alt="imagem" height="300" width="300" class="akatsukifoto">
+			<H3> ROUPA AKATSUKI</H3>
+			<h3> DE R$:90,00 PARA R$:70,00 </H3>
+
+</div>
+</body>
+</html>
+	
+			
+		</form>
+	</div>
+</body>
+<footer> 
+		
+		<h4>
+			<a href="sobrenos.html" name="sobrenos" id="sobrenos" class="sobrenos">
+			Conheca mais sobre os criadores deste conteudo
+		</a>
+		</h4>
+		
+	
+</footer>
+</html>
+ 
+
+

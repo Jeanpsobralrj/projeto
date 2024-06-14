@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{ 
+			background-image:url("fundosite.png");
+			background-size:cover;
+			width:100% 100%;
+		}
+		.bem-vindo {
+			border-style: solid;
+			border-color: black;
+			box-shadow: 2vw black;
+			border-width: 100%;
+			border-radius: 0.5vw;
+			color: black;
+			background-color: #303030;
+			text-align: center;
+			width: auto;
+			margin: auto;
+			word-break: normal;
+			max-width: auto;
+		}
+		.foto {
+			max-width: 100%;
+			width: 4vw;
+			height: 100%;
+			margin: 0.1vw 70vw -4.7vw 1vw;
+		}
+		.borda-formulario {
+			border-style: solid;
+			border-color: #303030;
+			box-shadow: 0.9vw;
+			border-width: 0.5vw;
+			border-radius: 2vw;
+			background-color: #303030;
+			text-align: center;
+			width: 70vw;
+			height: auto;
+			margin: auto;
+			margin-top: 2vw;
+			max-width: auto;
+		}
+		h1, h2, h3, h4 {
+			font-family: arial;
+			font-style: italic;
+			font-weight: bold;
+			text-align: center;
+		}
+		h1 {
+			color: white;
+			font-size: 3vw;
+		}
+		h2 {
+			color: white;
+			text-shadow: 0.1vw 0.1vw 0.3vw black;
+			font-size: 3vw;
+			-webkit-text-stroke: 0.1vw black;
+		}
+		h3 {
+			font-size: 1.6vw;
+			color: white;
+			-webkit-text-stroke: 0.1vw black;
+		}
+		h4 {
+			color: white;
+			font-size: 1.5vw;
+			-webkit-text-stroke: 0.1vw black;
+		}
+		.textotobi, .textosakura, .textojiraya {
+			margin: auto;
+		}
+		.textotobi {
+			text-align: left;
+			margin-left: 38vw;
+		}
+		.textosakura {
+			text-align: center;
+			margin-top: 2vw;
+		}
+		.textojiraya {
+			text-align: right;
+			margin-top: 1vw;
+			margin-right: 39vw;
+		}
+		.titulo {
+			font-size: 2vw;
+			color: #451a4d;
+			-webkit-text-stroke: 0.1vw white;
+		}
+		p {
+			font-size: 2vw;
+			color: white;
+			font-style: italic;
+			font-weight: bold;
+			-webkit-text-stroke: 0.1vw purple;
+		}
+		.botao, .botaopesquisa {
+			border-style: solid;
+			border-color: #303030;
+			box-shadow: 0.5vw #303030;
+			border-width: 0.3vw;
+			border-radius: 3vw;
+			color: white;
+			background-color: #303030;
+			font-family: arial;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.5vw;
+			text-decoration: none;
+			-webkit-text-stroke: 0.1vw black;
+		}
+		.pesquisa {
+			height: 1.8vw;
+			width: 40vw;
+			margin: -10vw 2vw -1vw 1vw;
+			border-style: solid;
+			border-color: white;
+			box-shadow: 9vw #303030;
+			border-width: 0.3vw;
+			border-radius: 3vw;
+			color: orange;
+			background-color: white;
+			font-family: arial;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.5vw;
+			max-width: auto;
+		}
+		.sakura, .tobi, .jirayacamisa, .sasuke, .naruto {
+			width: 20vw;
+			height: auto;
+			margin: auto;
+		}
+		.botaocarousel {
+			border-style: solid;
+			border-color: #303030;
+			box-shadow: 1vw #303030;
+			width: 4vw;
+			height: 4vw;
+			border-width: 0.5vw;
+			border-radius: 2vw;
+			color: white;
+			background-color: white;
+			-webkit-text-stroke: 0.2vw purple;
+			max-width: auto;
+		}
+		.sobrenos {
+			color: black;
+			font-family: arial;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.5vw;
+			text-align: center;
+			-webkit-text-stroke: 0.01vw black;
+			text-decoration: none;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2vw;
+			justify-items: center;
+			align-items: center;
+			margin-top: 2vw;
+		}
+		.grid-item {
+			background: transparent;
+			text-align: center;
+		}
+		.buy-button {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px 20px;
+			background-color: white;
+			color: #303030;
+			text-decoration: none;
+			border: 2px solid #303030;
+			border-radius: 5px;
+			font-family: arial;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.5vw;
+			-webkit-text-stroke: 0.1vw black;
+		}
+		.buy-button:hover {
+			background-color: #303030;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="bem-vindo">
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+					<script>
+						function botao(){
+						
+							swal({
+							title: "Acabou o crakra",
+							text: "Pesquisa liberada apenas para usuarios logados",
+							icon: "success",
+							button: "Acessar login",
+							}).then((value) => {
+         							   window.location = "login.php"
+     									   })
+
+							}
+					</script>
+		<h3>
+			<img src="narutohogake.png" class="foto">
+			<input type="text" placeholder="pesquisa" id="pesquisa" class="pesquisa" name="pesquisa">
+			<button onclick="botao()" type="submit" id="pesquisa" class="botaopesquisa" name="botaopesquisa">Buscar</button>
+		</h3>
+		<h3>  
+			<a href="roupas.html" class="botaopesquisa">Roupas</a> //
+			<a href="cosplay.html" class="botaopesquisa">Cosplay</a> //
+			<a href="bonecos.html" class="botaopesquisa">Bonecos</a> //
+			<a href="mangas.html" class="botaopesquisa">Mangas</a>//
+			<a href="acessorios.html" class="botaopesquisa">Acessorios</a>//
+			<a href="login.php" class="botaopesquisa">Login</a>
+		</h3>
+	</div>
+
+
+	<!-- New section for ROUPAS -->
+	<div id="roupas" class="borda-formulario">
+		<h2>Roupas</h2>
+		<div class="grid-container">
+			<div class="grid-item">
+				<img src="CAMISANARUTO1.jpg" class="naruto" style="background: transparent;">
+				<h3>Camisa Naruto transformação</h3>
+				<h3> De 89,90 para 69,90</h3>
+				<a href="#" class="buy-button">Comprar</a>
+			</div>
+			<div class="grid-item">
+				<img src="CAMISANARUTO2.jpg" class="sasuke" style="background: transparent;">
+				<h3>Camisa Sasuke e Naruto </h3>
+				<h3> De 79,90 para 59,90</h3>
+				<a href="#" class="buy-button">Comprar</a>
+			</div>
+			<div class="grid-item">
+				<img src="SASUKECAMISA1.jpg" class="naruto" style="background: transparent;">
+				<h3>Camisa Sasuke clássico </h3> 
+				<h3> De 99,90 para 79,90</h3>
+				<a href="#" class="buy-button">Comprar</a>
+			</div>
+			<div class="grid-item">
+				<img src="SASUKECAMISA2.jpg" class="sasuke" style="background: transparent;">
+				<h3>Camisa Sasuke ultimate </h3>
+				 <h3> De 109,90 para 89,90</h3>
+				<a href="#" class="buy-button">Comprar</a>
+			</div>
+		</div>
+	</div>
+</body>
+<footer> 
+		
+		<h4>
+			<a href="sobrenos.html" name="sobrenos" id="sobrenos" class="sobrenos">
+			Conheca mais sobre os criadores deste conteudo
+			</a>
+		</h4>
+		
+	
+</footer>
+</html>

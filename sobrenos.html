@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Quem somos nós</title>
+    <style>
+        
+	body{ 
+			background-image:url("fundosite.png");
+			background-size:cover;
+			width:100% 100%;
+		}
+        .bem-vindo {
+             border-style:solid;
+             border-color:black;
+             box-shadow: 2vw black;
+             border-width:auto;
+             border-radius:0.5vw;
+             color:black;
+             background-color:#303030 ;    
+             text-align:center;
+             width:100vw;
+		height:auto;
+             margin:auto auto auto auto;
+             word-break:normal;
+        }
+        .foto {
+           max-width: 100%;
+		width:4vw;
+			heigth:100%;
+			margin:0.1vw 70vw -4.7vw 1vw ;
+        }
+        .pesquisa {
+            height: 1.8vw;
+            width: 40vw;
+           margin:-10vw 2vw -1vw 1vw;
+            border-style: solid;
+            border-color: white;
+            box-shadow: 9vw #303030;
+            border-width: 0.3vw;
+            border-radius: 3vw;
+            color: orange;
+            background-color: white;
+            font-family: arial;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.5vw;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-text-stroke: 0.1vw #303030;
+        }
+        .botaopesquisa {
+            border-style: solid;
+            border-color: #303030;
+            box-shadow: 0.5vw #303030;
+            border-width: 0.3vw;
+            border-radius: 3vw;
+            color: white;
+            background-color: #303030;
+            font-family: arial;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.5vw;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-text-stroke: 0.1vw black;
+		margin:auto;
+        }
+        h1 {
+		font-family: arial;
+          	 font-style: italic;
+ 
+		margin-left:auto;
+		margin-top:3vw;
+            font-size: 4vw;
+            color: #fff;
+            
+		-webkit-text-stroke: 0.1vw black;
+		text-align:center;
+		text-decoration: none;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1.1vw;
+            text-align: center;
+            color: white;
+            font-family: arial;
+            font-style: italic;
+            font-weight: bold;
+            -webkit-text-stroke: 0.01vw #303030;
+
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .box {
+            width: 250px;
+            height: 300px;
+            border: 1px solid #303030;
+            margin: 30px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #303030;
+            border-radius: 2vw;
+        }
+        .box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .boxh3 {
+            color: #fff;
+        }
+        .boxa {
+            text-decoration: none;
+            color: #0073b1;
+        }
+        .boxa.instagram {
+            color: #E1306C;
+        }
+    </style>
+	<head>
+ 	<div class="bem-vindo">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+					<script>
+						function botao(){
+						
+							swal({
+							title: "Acabou o crakra",
+							text: "Pesquisa liberada apenas para usuarios logados",
+							icon: "success",
+							button: "Acessar login",
+							}).then((value) => {
+         							   window.location = "login.php"
+     									   })
+
+							}
+					</script>
+       	<h3>	<img src="narutohogake.png" class="foto"></>
+			<input type="text" placeholder="pesquisa" id="pesquisa" class="pesquisa" name="pesquisa"> 
+			</input>
+		<button onclick="botao()"type ="submit" id ="pesquisa" class="botaopesquisa" name="botaopesquisa">
+			Buscar
+		</button>
+		
+		</h3>
+	<h3>
+            <a href="roupas.html" class="botaopesquisa">Roupas</a> //
+			<a href="cosplay.html" class="botaopesquisa">Cosplay</a> //
+			<a href="bonecos.html" class="botaopesquisa">Bonecos</a> //
+			<a href="mangas.html" class="botaopesquisa">Mangas</a>//
+			<a href="acessorios.html" class="botaopesquisa">Acessorios</a>//
+			<a href="login.php" class="botaopesquisa">Login</a>
+        </h3>
+    </div>
+
+</head>
+<body>
+   
+   	 <h1>Quem somos nós </h1>
+    <div class="container">
+        <div class="box">
+            <img src="jean.png" alt="Foto 1">
+            <h3>Jean Pinheiro Sobral</h3>
+            <p><a href="https://linkedin.com/in/nome1" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/jeanpsobral/" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Gabriel.jpeg" alt="Foto 2">
+            <h3>Gabriel de Almeida Silva</h3>
+            <p><a href="https://www.linkedin.com/in/gabriel-de-almeida-silva-60a7a3289/?trk=opento_sprofile_details" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/gb_almeida1/" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Rayane.jpeg" alt="Foto 3">
+            <h3>Rayane Portilho dos Santos</h3>
+            <p><a href="https://linkedin.com/in/nome3" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/ha.nneee/?igsh=MWJ5am9lbDRlemRsMw%3D%3D" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Joao.jpeg" alt="Foto 4">
+            <h3>João Lucas de Lima Lucas</h3>
+            <p><a href="https://linkedin.com/in/nome4" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/jotta2ll/?igsh=eXphcTI1YmdhaDc5" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Yan.jpeg" alt="Foto 5">
+            <h3>Yan Santos do Amaral</h3>
+            <p><a href="https://www.linkedin.com/in/yan-santos-do-amaral-43351119a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/yan._santos?igsh=ZDVzOTBzMjB1dDFu&utm_source=qr" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Adrielle.jpeg" alt="Foto 6">
+            <h3>Adrielle Vieira da Silva</h3>
+            <p><a href="https://linkedin.com/in/nome6" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/driizita/?igsh=eXIyc3E5dDlkdmZp" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+        <div class="box">
+            <img src="Lucas.jpeg" alt="Foto 7">
+            <h3>Lucas Gomes Melo</h3>
+            <p><a href="https://www.linkedin.com/in/lucas-gomes-007055191/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/youngxxmelo?igsh=MWcyeXY0ZjAxeDl6dQ%3D%3D&utm_source=qr" target="_blank" class="instagram">Instagram</a></p>
+        </div>
+    </div>
+</body>
+</html>
